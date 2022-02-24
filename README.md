@@ -1,1 +1,1 @@
-# DisneyLand-NLP-sentimet-analysis
+# DisneyLand-NLP-sentiment-analysis
