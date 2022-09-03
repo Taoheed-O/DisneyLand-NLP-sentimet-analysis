@@ -61,6 +61,24 @@ def main():
 	else:
 		st.warning('This model is under review and not available for predicting yet.'.format(result))
 		pass
+	
+	html_git = """
+	<h3>Checkout my GitHub</h3>
+	<div style ="background-color:black;padding:13px">
+	<h1 style ="color:white;text-align:center;"><a href="https://github.com/Taoheed-O"> My GitHub link</h1>
+	</div>
+	"""
+	html_linkedIn = """
+	<h3>Connect with me on LinkedIn</h3>
+	<div style ="background-color:black;padding:13px">
+	<h1 style ="color:white;text-align:center;"><a href="https://www.linkedin.com/in/taoheed-oyeniyi"> My LinkedIn</h1>
+	</div>
+	"""
+	
+	# this line allows us to display the front end aspects we have
+	# defined in the above code
+	st.markdown(html_git, unsafe_allow_html = True)
+	st.markdown(html_linkedIn, unsafe_allow_html = True)
 
 			
         
