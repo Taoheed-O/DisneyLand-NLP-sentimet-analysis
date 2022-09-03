@@ -26,7 +26,7 @@ def prediction(text):
 # this is the main function in which is defined on the webpage
 def main():
 	# giving the webpage a title
-	st.title("Review Classifier")
+	st.title("Machine Learning Sentiment Analysis")
 	
 	# the font and background color, the padding and the text to be displayed
 	html_temp = """
@@ -40,7 +40,7 @@ def main():
 	st.markdown(html_temp, unsafe_allow_html = True)
 	
 	#List of available models 
-	options = st.selectbox("Available Models:", ["Support Vector Machine(SVM)"])
+	options = st.radio("Available Models:", ["Support Vector Machine(SVM)", "Decision Tree"])
 	result =""
 
 	# the below line ensures that when the button called 'Predict' is clicked,
@@ -59,6 +59,7 @@ def main():
 			else:
 				st.success('This is a POSITIVE review'.format(result))
 	else:
+		st.warning('This model is under review and not available for predicting yet.'.format(result))
 		pass
 
 			
