@@ -12,6 +12,7 @@ classifier = pickle.load(pickle_in)
 vectorizer_in = open('vectorizer.pkl', 'rb')
 vectorizer = pickle.load(vectorizer_in)
 
+st.image("https://1000logos.net/wp-content/uploads/2017/05/Symbol-Walt-Disney.jpg")
 def welcome():
 	return 'welcome all'
 
